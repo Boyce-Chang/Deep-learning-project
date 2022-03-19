@@ -101,7 +101,7 @@ class ICA(keras.utils.Sequence):
         self.target_img_paths = target_img_paths
 
     def __len__(self):
-        return len(self.target_img_paths) // self.batch_size
+        return len(self.target_img_paths) // s`elf.batch_size
 
     def __getitem__(self, idx):
         """Returns tuple (input, target) correspond to batch #idx."""
