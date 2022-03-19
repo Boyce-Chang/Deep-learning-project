@@ -87,7 +87,7 @@ def load_paths(path,test_size=0.2):
 
 
 path='/Users/Boyce/OneDrive/Documents/ICA/ICA/'
-(X_train, y_train), (X_val, y_val), (X_test, y_test)=load_paths(path)
+(X_train, y_train), (X_val, y_val), (X_test, y_test)=load_paths(path)     #splitting a dataset  
 
 from tensorflow import keras
 from tensorflow.keras.preprocessing.image import load_img
@@ -130,7 +130,6 @@ img_size
 i=5
 batch_img, batch_mask=train_gen[i]
 batch_img.shape
-
 batch_mask.shape
 
 def get_model(img_size, num_classes):
